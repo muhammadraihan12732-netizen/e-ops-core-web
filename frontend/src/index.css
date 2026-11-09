@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@theme {
+  --color-bg: #2b2d42;
+  --color-side: #2f3146;
+  --color-panel: #3b3e57;
+  --color-accent: #1fc8c9;
+}
+body { @apply bg-bg text-slate-200 text-sm antialiased; font-family: system-ui, sans-serif; }
+.input { @apply w-full rounded-lg bg-white/10 px-3 py-2 text-xs outline-none placeholder:text-slate-400 focus:ring-1 focus:ring-accent; }
+.btn { @apply rounded-md bg-accent px-3 py-2 text-[11px] font-bold text-slate-900 hover:opacity-90 disabled:opacity-50; }
+.card { @apply rounded-2xl bg-panel p-4 shadow-lg; }
+.th { @apply px-3 py-2 text-left text-[10px] font-semibold uppercase text-slate-400; }
+.td { @apply px-3 py-2.5 text-[11px]; }
